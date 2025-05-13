@@ -1,0 +1,169 @@
+:root{
+    --cor-fundo-preto: #000000;
+    --cor-fundo-azul: #33A8DB;
+    --cor-fundo-azul-escuro: #1472B7;
+}
+body{
+    background-color: var(--cor-fundo-preto);
+    font-family: 'Raleway', arial !important;
+}
+.banner{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(#000000, #188ec057), url(../images/banner.png);
+    background-size: cover;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
+    border-bottom: 2px solid var(--cor-fundo-azul);
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', arial;
+}
+.banner-content .logo{
+    background-color: #00000033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+    height: 268px;
+    border-radius: 50%;
+}
+.banner-content h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(var(--cor-fundo-azul), var(--cor-fundo-azul-escuro));
+    background-clip: text;
+    color: transparent;
+    margin: 10px 0;
+}
+.banner-content p{
+    font-size: 20px;
+    color: white;
+    max-width: 500px;
+    margin-top: 0;
+    font-weight: 300;
+}
+.banner-content button{
+    width: 320px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid var(--cor-fundo-azul);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--cor-fundo-azul);
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.banner-content button:hover{
+    color: white;
+}
+
+main #course-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 60px auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#course-content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cor-fundo-azul);
+}
+#course-content p{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.modules-list .module{
+    width: 500px;
+    padding: 20px;
+    background-color: #252525;
+    border: 1px solid var(--cor-fundo-azul-escuro);
+    box-shadow: inset 1px 5px 5px rgba(0, 0, 0, 0.39);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.modules-list .module span{
+    color: var(--cor-fundo-azul);
+}
+#transform-world{
+    background: url(../images/woman-code1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    position: relative;
+    padding-left: 100px;
+    margin:0 auto;
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--cor-fundo-azul);
+    border-top: 2px solid var(--cor-fundo-azul);
+}
+#transform-world p{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: lowercase;
+    color: white;
+    max-width: 220px;
+    padding-top: 100px;
+}
+#transform-world p::before{
+    content:'TRANSFORME O MUNDO COM A GENTE';
+}
+#professional-challenges{
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+#professional-challenges h2{
+    color: var(--cor-fundo-azul);
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+    max-width: 900px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#professional-challenges img{
+    max-width: 650px;
+}
+#professional-challenges p{
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border-top: 2px solid var(--cor-fundo-azul);
+    background: linear-gradient(#33A8DB00, #33A8DB33, #33A8DB33);
+    padding: 40px;
+}
